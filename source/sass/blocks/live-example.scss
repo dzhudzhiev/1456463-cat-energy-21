@@ -1,0 +1,30 @@
+.live-example {
+  background-color: $light-gray;
+}
+
+.live-example__title {
+  font-family: "Oswald";
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 40px;
+  text-align: center;
+  color: $basic-black;
+}
+
+.live-example__text {
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.live-example__total-spent {
+  font-family: "Oswald";
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $basic-black;
+}

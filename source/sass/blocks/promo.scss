@@ -1,0 +1,19 @@
+.promo__header {
+  background-color: rgba(104, 183, 56, 0.85);
+  font-family: "Oswald";
+  text-align: center;
+  color: $basic-white;
+}
+
+.promo__title {
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.promo__slogan {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+}
