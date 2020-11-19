@@ -1,0 +1,18 @@
+.main-nav__list {
+  list-style: none;
+}
+
+.main-nav__item {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $basic-black;
+  text-align: center;
+}
+
+.main-nav__item a {
+  text-decoration: none;
+  color: $basic-black;
+}
