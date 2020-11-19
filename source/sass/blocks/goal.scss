@@ -1,6 +1,6 @@
 .goal {
   background-color: $basic-gray;
-  font-family: "Oswald";
+  font-family: "Oswald", "Arial", sans-serif;
 }
 
 .goal__title {
@@ -11,7 +11,7 @@
 }
 
 .goal__text {
-  font-family: Arial;
+  font-family: "Arial", sans-serif;
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
