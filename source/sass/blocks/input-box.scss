@@ -1,0 +1,32 @@
+.input-box__label,
+.input-box__input {
+  font-family: $font-oswald;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $dark-gray;
+}
+
+.input-box__input {
+  padding: 13px 14px 16px;
+  border: 1px solid $input-border;
+}
+
+.input-box__input:hover {
+  border-color: $input-border--hover;
+}
+
+.input-box__input:focus {
+  border-color: $input-border--focus;
+  border-radius: 0;
+  outline: none;
+}
+
+.input-box__label--radio {
+  color: $darker-gray;
+}
+
+.input-box__label--checkbox {
+  color: $basic-black;
+}

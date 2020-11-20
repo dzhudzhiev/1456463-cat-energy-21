@@ -1,3 +1,5 @@
+$font-oswald: "Oswald", "Arial", sans-serif;
+
 $basic-black: #000000;
 $light-black: #111111;
 $basic-white: #ffffff;
@@ -5,5 +7,11 @@ $basic-white: #ffffff;
 $basic-gray: #f2f2f2;
 $light-gray: #eaeaea;
 $dark-gray: #444444;
+$darker-gray: #222222;
 
 $main-color: #68b738;
+
+$input-border: #e7e7e7;
+$input-border--hover: #cdcdcd;
+$input-border--focus: $dark-gray;
+$input-border--error: #ff8282;
