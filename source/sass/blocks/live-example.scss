@@ -3,7 +3,7 @@
 }
 
 .live-example__title {
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $font-oswald;
   font-weight: normal;
   font-size: 36px;
   line-height: 40px;
@@ -21,7 +21,7 @@
 }
 
 .live-example__total-spent {
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $font-oswald;
   font-weight: normal;
   font-size: 14px;
   line-height: 20px;
