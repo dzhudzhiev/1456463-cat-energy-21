@@ -1,0 +1,41 @@
+.item-card__title {
+  font-family: $font-oswald;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $darker-gray;
+}
+
+.item-card__title--extra {
+  line-height: 16px;
+}
+
+.item-card__title--show-more {
+  color: $light-black;
+}
+
+.item-card__text,
+.item-card__details {
+  font-family: "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: $dark-gray;
+}
+
+.item-card__details--extra {
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.item-card__button {
+  font-size: 16px;
+  line-height: 20px;
+  border: none;
+}
+
+.item-card__button--show-more {
+  background-color: $basic-gray;
+  color: $dark-gray;
+}
