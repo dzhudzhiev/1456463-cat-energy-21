@@ -1,4 +1,10 @@
+.details-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
 .details-box__value {
+  grid-row: 1;
   font-family: $font-oswald;
   font-weight: normal;
   font-size: 24px;

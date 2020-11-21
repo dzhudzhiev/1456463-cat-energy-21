@@ -1,3 +1,11 @@
+.feature {
+  display: flex;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+  }
+}
+
 .feature__text {
   font-family: "Arial", sans-serif;
   font-weight: normal;

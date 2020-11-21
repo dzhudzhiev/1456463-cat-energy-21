@@ -3,6 +3,19 @@
   font-weight: normal;
   font-size: 36px;
   line-height: 40px;
-  text-align: center;
+  text-align: left;
   color: $basic-black;
+}
+
+.how-it-works__list {
+  list-style: none;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
