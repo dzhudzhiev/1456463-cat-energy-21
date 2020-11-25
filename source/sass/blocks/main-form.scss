@@ -1,3 +1,13 @@
+.main-form__wrapper {
+  @media (min-width: $tablet-width) {
+    padding: 0 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
+}
+
 .main-form__title {
   font-family: $font-oswald;
   font-weight: normal;
@@ -35,4 +45,48 @@
   font-size: 14px;
   line-height: 16px;
   color: $basic-black;
+}
+
+.main-form__main-data {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.main-form__cat-data {
+  display: grid;
+}
+
+.main-form__choose-goal {
+  display: grid;
+  padding: 25px 28px;
+  border: 1px solid $input-border;
+}
+
+.main-form__contacts {
+  display: grid;
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.main-form__extra {
+  display: grid;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.main-form__footer {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }

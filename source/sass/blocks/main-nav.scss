@@ -10,6 +10,12 @@
   }
 }
 
+.main-nav__list--main-page .main-nav__item a {
+  @media (min-width: $desktop-width) {
+    color: $basic-white;
+  }
+}
+
 .main-nav__item a {
   font-family: $font-oswald;
   font-weight: 500;
@@ -29,6 +35,11 @@
   @media (min-width: $desktop-width) {
     font-size: 20px;
     line-height: 30px;
-    color: $basic-white;
+  }
+}
+
+.main-nav__toggle {
+  @media (min-width: $tablet-width) {
+    display: none;
   }
 }
