@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="preload" href="./fonts/oswaldregular.woff2" as="font" />
     <link rel="preload" href="./fonts/oswaldmedium.woff2" as="font" />
@@ -12,7 +13,7 @@
       <a class="page-header__logo" href="index.html">
         <img src="https://via.placeholder.com/33x38" width="33" height="38" />
       </a>
-      <p class="page-header__title site-title"><b>cat</b> energy</p>
+      <span class="page-header__title site-title"><b>cat</b> energy</span>
       <nav class="page-header__nav main-nav">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
@@ -31,21 +32,20 @@
       </nav>
     </header>
 
-    <main class="page-main">
-      <form action="https://echo.htmlacademy.ru/courses" class="main-form">
+    <main class="page-main wrapper">
+      <h1 class="main-form__title">Подбор программы</h1>
+      <form
+        action="https://echo.htmlacademy.ru/courses"
+        class="main-form main-form__wrapper"
+      >
         <header class="main-form__header">
-          <div class="wrapper">
-            <h1 class="main-form__title">Подбор программы</h1>
-          </div>
-          <div class="main-form__wrapper">
-            <h2 class="main-form__subject">
-              Заполните анкету, и мы подберем<br />
-              программу питания для вашего кота
-            </h2>
-          </div>
+          <h2 class="main-form__subject">
+            Заполните анкету, и мы подберем<br />
+            программу питания для вашего кота
+          </h2>
         </header>
 
-        <div class="main-form__main-data main-form__wrapper">
+        <div class="main-form__main-data">
           <div class="main-form__cat-data">
             <label class="input-box">
               <span class="input-box__label">ИМЯ:*</span>
@@ -79,31 +79,31 @@
           </div>
           <div class="main-form__choose-goal">
             <label class="input-box">
-              <span class="input-box__label input-box__label--radio"
-                >похудение</span
-              >
               <input type="radio" name="goal" value="slim" checked />
+              <span class="input-box__label input-box__label--radio">
+                похудение
+              </span>
             </label>
             <label class="input-box">
-              <span class="input-box__label input-box__label--radio"
-                >похудение</span
-              >
               <input type="radio" name="goal" value="pro" />
+              <span class="input-box__label input-box__label--radio">
+                похудение
+              </span>
             </label>
             <label class="input-box">
-              <span class="input-box__label input-box__label--radio"
-                >Не знаю (Нужен ваш совет)</span
-              >
               <input type="radio" name="goal" value="any" />
+              <span class="input-box__label input-box__label--radio">
+                Не знаю (Нужен ваш совет)
+              </span>
             </label>
           </div>
         </div>
 
-        <div class="main-form__contacts main-form__wrapper">
-          <h2 class="main-form__subtitle">
-            Контактные данные<br />
-            (владельца кота)
-          </h2>
+        <h2 class="main-form__subtitle">
+          Контактные данные<br />
+          (владельца кота)
+        </h2>
+        <div class="main-form__contacts">
           <label class="input-box">
             <span class="input-box__label">E-mail:*</span>
             <input
@@ -126,18 +126,16 @@
           </label>
         </div>
 
-        <div class="main-form__wrapper">
-          <h2 class="main-form__subtitle">Комментарий</h2>
+        <h2 class="main-form__subtitle">Комментарий</h2>
 
-          <textarea
-            class="main-form__comment input-box__input"
-            name="comment"
-            placeholder="Расскажите обо всех повАдках кота"
-          ></textarea>
-        </div>
+        <textarea
+          class="main-form__comment input-box__input"
+          name="comment"
+          placeholder="Расскажите обо всех повАдках кота"
+        ></textarea>
 
-        <div class="main-form__extra main-form__wrapper">
-          <h2 class="main-form__subtitle">Дополнительно</h2>
+        <h2 class="main-form__subtitle">Дополнительно</h2>
+        <div class="main-form__extra">
           <label class="input-box">
             <input
               class="input-box__checkbox"
@@ -173,7 +171,7 @@
           </label>
         </div>
 
-        <footer class="main-form__footer main-form__wrapper">
+        <footer class="main-form__footer">
           <input
             class="main-form__submit button"
             type="submit"
@@ -186,51 +184,49 @@
 
     <footer class="page-footer">
       <div class="contacts">
-        <header class="contacts__header">
-          <div
-            class="contacts__info contacts__info--background contacts__wrapper"
-          >
-            <h2 class="contacts__title">
-              приглашаем<br />
-              к сотрудничеству<br />
-              дилеров!
-            </h2>
-            <p class="contacts__address">
-              ул. Большая<br />
-              Конюшенная, д. 19/8<br />
-              <span>Санкт-Петербург</span>
-            </p>
-          </div>
-          <div class="contacts__map"></div>
-        </header>
-      </div>
-      <div class="wrapper">
-        <p class="page-footer__title site-title"><b>cat</b> energy</p>
-        <div class="page-footer__social social">
-          <ul class="social__list">
-            <li class="social__item">
-              <a
-                class="social__link social__link--vkontakte"
-                href="https://vk.com/htmlacademy"
-                >Мы в Вконтакте</a
-              >
-            </li>
-            <li class="social__item">
-              <a
-                class="social__link social__link--instagram"
-                href="https://www.instagram.com/htmlacademy"
-                >Мы в Инстаграме</a
-              >
-            </li>
-            <li class="social__item">
-              <a
-                class="social__link social__link--facebook"
-                href="https://www.facebook.com/htmlacademy"
-                >Мы в Фейсбуке</a
-              >
-            </li>
-          </ul>
+        <div class="wrapper main-form__wrapper">
+          <header class="contacts__header">
+            <div class="contacts__wrapper">
+              <h2 class="contacts__title">
+                приглашаем<br />
+                к сотрудничеству<br />
+                дилеров!
+              </h2>
+              <p class="contacts__address">
+                ул. Большая<br />
+                Конюшенная, д. 19/8<br />
+                <span>Санкт-Петербург</span>
+              </p>
+            </div>
+          </header>
         </div>
+        <div class="contacts__map"></div>
+      </div>
+      <div class="page-footer__bottom wrapper">
+        <p class="page-footer__title site-title"><b>cat</b> energy</p>
+        <ul class="page-footer__social social-list">
+          <li class="social-list__item">
+            <a
+              class="social__link social__link--vkontakte"
+              href="https://vk.com/htmlacademy"
+              >Мы в Вконтакте</a
+            >
+          </li>
+          <li class="social-list__item">
+            <a
+              class="social__link social__link--instagram"
+              href="https://www.instagram.com/htmlacademy"
+              >Мы в Инстаграме</a
+            >
+          </li>
+          <li class="social-list__item">
+            <a
+              class="social__link social__link--facebook"
+              href="https://www.facebook.com/htmlacademy"
+              >Мы в Фейсбуке</a
+            >
+          </li>
+        </ul>
         <div class="page-footer__copyright copyright">
           <a
             class="copyright__link"
