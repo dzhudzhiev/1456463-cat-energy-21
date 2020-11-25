@@ -1,6 +1,21 @@
 .goal {
-  background-color: $basic-gray;
+  display: flex;
+  flex-direction: column;
   font-family: $font-oswald;
+  position: relative;
+  background-color: $basic-gray;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 30%;
+  }
+}
+
+.goal__image {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
 }
 
 .goal__title {
@@ -8,6 +23,7 @@
   line-height: 37px;
   font-weight: normal;
   text-transform: uppercase;
+  display: inline;
 }
 
 .goal__text {

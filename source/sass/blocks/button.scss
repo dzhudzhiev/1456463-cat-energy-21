@@ -1,4 +1,5 @@
 .button {
+  display: block;
   font-family: $font-oswald;
   font-weight: normal;
   font-size: 14px;
@@ -8,7 +9,6 @@
   text-transform: uppercase;
   text-decoration: none;
   background-color: $main-color;
-  display: block;
   padding-top: 7px;
   padding-bottom: 7px;
 }
