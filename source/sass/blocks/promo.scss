@@ -1,18 +1,5 @@
 .promo {
   position: relative;
-  height: 502px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-
-  @media (min-width: $tablet-width) {
-    height: 872px;
-    justify-content: flex-start;
-  }
-
-  @media (min-width: $desktop-width) {
-    height: 696px;
-  }
 
   &::after {
     content: "";
@@ -38,18 +25,23 @@
   }
 }
 
-.promo__wrapper {
-  margin: 0 20px;
-}
-
-.promo__header {
+.promo__inner {
   font-family: $font-oswald;
   text-align: center;
   color: $basic-white;
+  height: 502px;
+  display: flex;
+  flex-direction: column;
 
   @media (min-width: $tablet-width) {
+    height: 872px;
+    justify-content: flex-start;
     text-align: left;
     color: $basic-black;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 696px;
   }
 }
 
@@ -89,8 +81,11 @@
   margin: auto;
 }
 
-.promo__footer {
+.promo__button {
+  margin-top: auto;
+
   @media (min-width: $tablet-width) {
+    margin-top: inherit;
     width: 244px;
   }
 }
