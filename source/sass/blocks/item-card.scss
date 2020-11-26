@@ -1,3 +1,77 @@
+.item-card {
+  display: grid;
+  grid-template-rows: 1fr auto;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    background-color: $basic-gray;
+    padding: 40px;
+    margin-top: 80px;
+  }
+}
+
+.item-card--extra {
+  border-top: 1px solid #cdcdcd;
+  padding-top: 13px;
+  padding-bottom: 19px;
+
+  @media (min-width: $tablet-width) {
+    background-color: $basic-white;
+    border: 1px solid #cdcdcd;
+    margin-top: 0;
+    margin-bottom: -1px;
+    padding: 26px 38px;
+  }
+
+  @media (min-width: $desktop-width) {
+    border-left: none;
+    border-right: none;
+    padding: 15px 0 17px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    column-gap: 40px;
+  }
+}
+
+.item-card--show-more {
+  @media (min-width: $tablet-width) {
+    background-color: $basic-white;
+    border: 2px solid $basic-gray;
+  }
+}
+
+.item-card__image {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    bottom: 90%;
+    left: 0;
+  }
+}
+
+.item-card__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 1fr;
+    padding-top: 100px;
+  }
+}
+
+.item-card__content--extra {
+  grid-template-columns: 1fr;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 0;
+  }
+}
+
+.item-card__content--show-more {
+  grid-template-columns: 1fr;
+}
+
 .item-card__title {
   font-family: $font-oswald;
   font-weight: normal;
@@ -5,14 +79,29 @@
   line-height: 20px;
   text-transform: uppercase;
   color: $darker-gray;
+  display: inline-block;
+  width: 80px;
+
+  @media (min-width: $tablet-width) {
+    width: 120px;
+    text-align: center;
+  }
 }
 
 .item-card__title--extra {
+  width: auto;
   line-height: 16px;
+  text-align: left;
 }
 
 .item-card__title--show-more {
   color: $light-black;
+  text-align: center;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    width: 120px;
+  }
 }
 
 .item-card__text,
@@ -24,15 +113,38 @@
   color: $dark-gray;
 }
 
+.item-card__text {
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    width: 140px;
+  }
+}
+
+.item-card__details {
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+
 .item-card__details--extra {
   font-size: 14px;
   line-height: 14px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .item-card__button {
+  width: 100%;
   font-size: 16px;
   line-height: 20px;
   border: none;
+}
+
+.item-card__button--extra {
+  @media (min-width: $desktop-width) {
+    width: 244px;
+  }
 }
 
 .item-card__button--show-more {
