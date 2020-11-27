@@ -2,7 +2,15 @@
   position: relative;
 }
 
-.contacts__header {
+.contacts--background {
+  background-color: $basic-gray;
+
+  @media (min-width: $desktop-width) {
+    background-color: transparent;
+  }
+}
+
+.contacts__wrapper {
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -12,7 +20,7 @@
   }
 }
 
-.contacts__wrapper {
+.contacts__info {
   display: flex;
   justify-content: space-between;
   background-color: $basic-white;
@@ -20,6 +28,10 @@
 
 .contacts__info--background {
   background-color: $basic-gray;
+
+  @media (min-width: $desktop-width) {
+    background-color: $basic-white;
+  }
 }
 
 .contacts__title {

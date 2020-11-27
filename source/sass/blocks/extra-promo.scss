@@ -1,8 +1,11 @@
+.extra-promo {
+  background-color: rgba(104, 183, 56, 0.85);
+}
+
 .extra-promo__text {
   font-family: "Arial", sans-serif;
   font-weight: normal;
   font-size: 16px;
   line-height: 20px;
   color: $basic-white;
-  background-color: rgba(104, 183, 56, 0.85);
 }
