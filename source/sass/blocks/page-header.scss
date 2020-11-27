@@ -1,4 +1,12 @@
 .page-header {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.page-header__inner {
+  min-height: 65px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -17,5 +25,65 @@
 
   @media (min-width: $desktop-width) {
     min-width: 478px;
+  }
+}
+
+.page-header--nav-closed .page-header__nav {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.page-header--nojs .page-header__nav,
+.page-header--nav-opened .page-header__nav {
+  display: block;
+}
+
+.page-header__nav-toggle {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  border: none;
+  width: 24px;
+  height: 16px;
+  background-color: $basic-white;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.page-header--nav-closed .page-header__nav-toggle::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 24px;
+  height: 1.5px;
+  background-color: $basic-black;
+  box-shadow: 0 7px 0 0 $basic-black, 0 14px 0 0 $basic-black;
+}
+
+.page-header--nav-opened .page-header__nav-toggle {
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 7px;
+    right: 0;
+    width: 25px;
+    height: 1.5px;
+    background-color: $basic-black;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
   }
 }

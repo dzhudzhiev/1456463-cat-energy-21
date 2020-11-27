@@ -9,15 +9,19 @@
     <title>HTML Academy: Кэт энерджи</title>
   </head>
   <body class="page__body">
-    <header class="page-header wrapper">
-      <a class="page-header__logo">
-        <img src="https://via.placeholder.com/33x38" width="33" height="38" />
-      </a>
-      <span class="page-header__title site-title"><b>cat</b> energy</span>
-      <nav class="page-header__nav main-nav">
-        <button class="main-nav__toggle" type="button">
+    <header
+      class="page-header page-header--nojs page-header--nav-closed wrapper"
+    >
+      <div class="page-header__inner">
+        <a class="page-header__logo">
+          <img src="https://via.placeholder.com/33x38" width="33" height="38" />
+        </a>
+        <span class="page-header__title site-title"><b>cat</b> energy</span>
+        <button class="page-header__nav-toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
+      </div>
+      <nav class="page-header__nav main-nav main-nav--closed">
         <ul class="main-nav__list main-nav__list--main-page">
           <li class="main-nav__item main-nav__item--active">
             <a>Главная</a>
@@ -205,7 +209,7 @@
     <footer class="page-footer">
       <div class="contacts">
         <div class="wrapper">
-          <header class="contacts__wrapper">
+          <div class="contacts__wrapper">
             <div class="contacts__info">
               <h2 class="contacts__title">
                 приглашаем<br />
@@ -218,7 +222,7 @@
                 <span>Санкт-Петербург</span>
               </p>
             </div>
-          </header>
+          </div>
         </div>
         <div class="contacts__map"></div>
       </div>
@@ -267,5 +271,22 @@
         </div>
       </div>
     </footer>
+
+    <script>
+      const pageHeader = document.querySelector(".page-header");
+      const navToggle = document.querySelector(".page-header__nav-toggle");
+
+      pageHeader.classList.remove("page-header--nojs");
+
+      navToggle.addEventListener("click", function () {
+        if (pageHeader.classList.contains("page-header--nav-opened")) {
+          pageHeader.classList.remove("page-header--nav-opened");
+          pageHeader.classList.add("page-header--nav-closed");
+        } else {
+          pageHeader.classList.remove("page-header--nav-closed");
+          pageHeader.classList.add("page-header--nav-opened");
+        }
+      });
+    </script>
   </body>
 </html>
