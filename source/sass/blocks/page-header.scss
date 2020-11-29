@@ -1,19 +1,42 @@
 .page-header {
   @media (min-width: $tablet-width) {
+    min-height: 102px;
     display: flex;
     justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 36px;
   }
 }
 
 .page-header__inner {
-  min-height: 65px;
+  min-height: 66px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.page-header__title {
+.page-header__logo img {
   @media (min-width: $tablet-width) {
+    height: 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 59px;
+  }
+}
+
+.page-header__title img {
+  @media (min-width: $tablet-width) {
+    margin-left: 12px;
+    margin-right: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 21px;
+    width: 118px;
+    margin-left: 14px;
     margin-right: auto;
   }
 }
