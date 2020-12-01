@@ -1,15 +1,129 @@
 .feature {
+  position: relative;
   display: flex;
+  min-height: 80px;
 
   @media (min-width: $tablet-width) {
     flex-direction: column;
+    padding-bottom: 40px;
+  }
+}
+
+.feature::before {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: 0;
+  width: 60px;
+  height: 60px;
+  background-color: $main-color;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media (min-width: $tablet-width) {
+    top: 46px;
+    width: 80px;
+    height: 80px;
+  }
+}
+
+.feature::after {
+  position: absolute;
+  font-family: $font-oswald;
+  font-weight: 400;
+  font-size: 280px;
+  line-height: 280px;
+  color: $basic-gray;
+  bottom: -5px;
+  z-index: -1;
+}
+
+.feature--one::before {
+  background-image: url("../img/icon_leaf.svg");
+}
+
+.feature--one::after {
+  @media (min-width: $tablet-width) {
+    content: "1";
+    right: 95px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 18px;
+  }
+}
+
+.feature--two::before {
+  background-image: url("../img/icon_tub.svg");
+}
+
+.feature--two::after {
+  @media (min-width: $tablet-width) {
+    content: "2";
+    right: 79px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 0;
+  }
+}
+
+.feature--three::before {
+  background-image: url("../img/icon_eat.svg");
+}
+
+.feature--three::after {
+  @media (min-width: $tablet-width) {
+    content: "3";
+    right: 78px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 0;
+  }
+}
+
+.feature--four::before {
+  background-image: url("../img/icon_alarm.svg");
+}
+
+.feature--four::after {
+  @media (min-width: $tablet-width) {
+    content: "4";
+    right: 75px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 0;
   }
 }
 
 .feature__text {
+  padding-left: 80px;
+  margin-bottom: 12px;
   font-family: "Arial", sans-serif;
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
   color: $dark-gray;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+    padding-top: 142px;
+    padding-right: 75px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 0;
+  }
+}
+
+.feature__text br {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: inline;
+  }
 }

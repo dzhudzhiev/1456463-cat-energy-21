@@ -80,9 +80,6 @@
       opacity: 0.3;
     }
   }
-
-  @media (min-width: $desktop-width) {
-  }
 }
 
 .main-nav__item--active a {
@@ -99,6 +96,11 @@
     width: 100%;
     height: 2px;
     background-color: #68b738;
+  }
+
+  @media (min-width: $desktop-width) {
+    bottom: 16px;
+    width: 98%;
   }
 }
 
