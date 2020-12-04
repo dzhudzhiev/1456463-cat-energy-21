@@ -9,6 +9,10 @@
   }
 }
 
+.copyright:active {
+  opacity: 0.3;
+}
+
 .copyright__link {
   display: block;
   margin-top: 7px;
@@ -22,4 +26,12 @@
   @media (min-width: $tablet-width) {
     margin-right: 24px;
   }
+}
+
+.copyright__image {
+  color: $dark-gray;
+}
+
+.copyright:hover .copyright__image {
+  color: $basic-green;
 }

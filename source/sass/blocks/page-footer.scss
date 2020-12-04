@@ -34,6 +34,15 @@
   }
 }
 
+.page-footer__logo img:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.page-footer__logo img:active {
+  opacity: 0.6;
+}
+
 .page-footer__logo img {
   display: block;
   margin: 0 auto;
@@ -46,6 +55,8 @@
 .page-footer__copyright {
   @media (min-width: $tablet-width) {
     padding: 0;
+    width: max-content;
+    margin-left: auto;
   }
 
   @media (min-width: $desktop-width) {

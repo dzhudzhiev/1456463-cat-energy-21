@@ -27,6 +27,15 @@
   }
 }
 
+.page-header__inner:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.page-header__inner:active {
+  opacity: 0.6;
+}
+
 .page-header__title {
   margin-right: 10px;
   padding-bottom: 1px;

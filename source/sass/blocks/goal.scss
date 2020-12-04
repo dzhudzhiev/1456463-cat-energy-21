@@ -186,3 +186,11 @@
     right: -8px;
   }
 }
+
+.goal__link:hover::after {
+  background: url("../img/icon_arrow-long.svg") no-repeat left center;
+}
+
+.goal__link:active {
+  opacity: 0.3;
+}
