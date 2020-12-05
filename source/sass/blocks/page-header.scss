@@ -1,11 +1,59 @@
 .page-header {
+  @media (min-width: $tablet-width) {
+    min-height: 110px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 170px;
+  }
+}
+
+.page-header__inner {
+  min-height: 66px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.page-header__title {
+.page-header__logo img {
   @media (min-width: $tablet-width) {
+    width: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 59px;
+  }
+}
+
+.page-header__inner:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.page-header__inner:active {
+  opacity: 0.6;
+}
+
+.page-header__title {
+  margin-right: 10px;
+  padding-bottom: 1px;
+}
+
+.page-header__title img {
+  vertical-align: middle;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 12px;
+    margin-right: auto;
+    padding-bottom: 4px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 118px;
+    padding-top: 6px;
+    margin-left: 25px;
     margin-right: auto;
   }
 }
@@ -17,5 +65,65 @@
 
   @media (min-width: $desktop-width) {
     min-width: 478px;
+  }
+}
+
+.page-header--nav-closed .page-header__nav {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.page-header--nojs .page-header__nav,
+.page-header--nav-opened .page-header__nav {
+  display: block;
+}
+
+.page-header__nav-toggle {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  border: none;
+  width: 24px;
+  height: 16px;
+  background-color: $basic-white;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.page-header--nav-closed .page-header__nav-toggle::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  right: 0;
+  width: 24px;
+  height: 1.5px;
+  background-color: $basic-black;
+  box-shadow: 0 8px 0 0 $basic-black, 0 16px 0 0 $basic-black;
+}
+
+.page-header--nav-opened .page-header__nav-toggle {
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    right: 0;
+    width: 25px;
+    height: 1.5px;
+    background-color: $basic-black;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
   }
 }

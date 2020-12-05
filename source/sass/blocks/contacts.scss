@@ -11,11 +11,17 @@
 }
 
 .contacts__wrapper {
+  @media (min-width: $tablet-width) {
+    width: 88%;
+    min-width: 625px;
+    margin: 0 auto;
+  }
+
   @media (min-width: $desktop-width) {
+    width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 80px;
-    align-items: center;
     height: 400px;
   }
 }
@@ -24,6 +30,18 @@
   display: flex;
   justify-content: space-between;
   background-color: $basic-white;
+  padding-top: 28px;
+  padding-bottom: 26px;
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 95px;
+    margin-bottom: 104px;
+    padding-left: 75px;
+    padding-right: 50px;
+    padding-top: 68px;
+  }
 }
 
 .contacts__info--background {
@@ -34,7 +52,9 @@
   }
 }
 
-.contacts__title {
+.contacts__title p {
+  margin-top: 0;
+  margin-bottom: 0;
   font-family: $font-oswald;
   font-style: normal;
   font-weight: normal;
@@ -42,26 +62,79 @@
   line-height: 18px;
   text-transform: uppercase;
   color: $light-black;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 4px;
+    font-size: 20px;
+    line-height: 21px;
+  }
+}
+
+.contacts__title p:first-child {
+  margin-bottom: 4px;
 }
 
 .contacts__address {
+  @media (min-width: $desktop-width) {
+    padding-left: 28px;
+  }
+}
+
+.contacts__address p {
   font-family: "Arial", sans-serif;
   font-weight: normal;
   font-size: 14px;
   line-height: 20px;
   color: $dark-gray;
+  margin: 0;
+  padding-right: 4px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 4px;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+    padding-right: 0;
+    margin-top: -4px;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+  }
+}
+
+.contacts__address p:last-child {
+  @media (min-width: $tablet-width) {
+    margin-top: 20px;
+  }
 }
 
 .contacts__map {
   height: 362px;
-  background-color: $main-color;
+  background-image: url("../img/location.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/location-tablet.png");
+    height: 400px;
+    margin-top: 27px;
+  }
 
   @media (min-width: $desktop-width) {
+    background-image: url("../img/location-desktop.png");
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     z-index: -1;
+    margin-top: 0;
   }
+}
+
+.contacts__map img {
+  height: 100%;
+  object-fit: cover;
 }

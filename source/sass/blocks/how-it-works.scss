@@ -1,3 +1,19 @@
+.how-it-works {
+  margin-bottom: 34px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 50px;
+    margin-bottom: 21px;
+    border-bottom: 1px solid #e6e6e6;
+  }
+
+  @media (min-width: $desktop-width) {
+    border: none;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+}
+
 .how-it-works__title {
   font-family: $font-oswald;
   font-weight: normal;
@@ -5,17 +21,28 @@
   line-height: 40px;
   text-align: left;
   color: $basic-black;
+  margin-bottom: 26px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .how-it-works__list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    column-gap: 59px;
+    row-gap: 35px;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(4, 1fr);
+    column-gap: 78px;
   }
 }
