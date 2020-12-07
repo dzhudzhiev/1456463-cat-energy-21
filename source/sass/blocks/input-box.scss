@@ -1,16 +1,88 @@
+.input-box {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 15px;
+
+  @media (min-width: $tablet-width) {
+    column-gap: 17px;
+  }
+}
+
+.input-box--contacts {
+  position: relative;
+  column-gap: 10px;
+
+  @media (min-width: $tablet-width) {
+    column-gap: 20px;
+  }
+}
+
 .input-box__label,
 .input-box__input {
-  font-family: $font-oswald;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 18px;
-  text-transform: uppercase;
-  color: $dark-gray;
+  @include form-text();
+  height: 45px;
+  line-height: 45px;
+
+  @media (min-width: $tablet-width) {
+    height: 52px;
+    line-height: 52px;
+  }
+}
+
+.input-box__label--contacts {
+  line-height: 38px;
+
+  @media (min-width: $tablet-width) {
+    line-height: 50px;
+  }
+}
+
+.input-box__icon {
+  position: absolute;
+  color: $darker-gray;
+}
+
+.input-box__icon--email {
+  top: 16px;
+  right: 16px;
+
+  @media (min-width: $tablet-width) {
+    top: 18px;
+    right: 17px;
+  }
+}
+
+.input-box__icon--phone {
+  top: 12px;
+  right: 14px;
+
+  @media (min-width: $tablet-width) {
+    top: 16px;
+    right: 17px;
+  }
 }
 
 .input-box__input {
-  padding: 13px 14px 16px;
+  padding-left: 15px;
+  padding-bottom: 1px;
   border: 1px solid $input-border;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 18px;
+  }
+}
+
+.input-box__input--comment {
+  width: 100%;
+  line-height: 18px;
+  min-height: 150px;
+  padding-top: 10px;
+  resize: none;
+
+  @media (min-width: $tablet-width) {
+    line-height: 30px;
+    min-height: 174px;
+  }
 }
 
 .input-box__input:hover {
@@ -23,10 +95,18 @@
   outline: none;
 }
 
-.input-box__label--radio {
-  color: $darker-gray;
+.input-box__input:focus + .input-box__icon {
+  color: $basic-green;
 }
 
-.input-box__label--checkbox {
-  color: $basic-black;
+.input-box__input:invalid {
+  border-color: $input-border--error;
+}
+
+.input-box__input:invalid + .input-box__icon {
+  color: $input-border--error;
+}
+
+.input-box--contacts .input-box__input {
+  padding-right: 50px;
 }
