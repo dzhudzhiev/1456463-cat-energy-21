@@ -33,6 +33,10 @@
   padding-top: 28px;
   padding-bottom: 26px;
 
+  @media (min-width: $tablet-width) {
+    padding-top: 68px;
+  }
+
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;

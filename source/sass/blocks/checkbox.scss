@@ -1,0 +1,51 @@
+.checkbox {
+  position: relative;
+  width: max-content;
+}
+
+.checkbox__input {
+  appearance: none;
+}
+
+.checkbox__label {
+  @include form-text();
+  cursor: pointer;
+  color: $basic-black;
+  padding-bottom: 0;
+  padding-left: 35px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 48px;
+  }
+}
+
+.checkbox__label::before,
+.checkbox__label::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  width: 30px;
+  height: 30px;
+  bottom: -5px;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.checkbox__label::before {
+  border: 1px solid #cdcdcd;
+}
+
+.checkbox__label:hover::before {
+  border: 1px solid #bababa;
+}
+
+.checkbox__input:checked + .checkbox__label::after {
+  background: url("../img/tick.svg") no-repeat center;
+}
+
+.checkbox__input:disabled + .checkbox__label {
+  opacity: 0.3;
+}
