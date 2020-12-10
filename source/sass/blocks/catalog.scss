@@ -1,9 +1,76 @@
+.catalog__wrapper {
+  width: 100%;
+  max-width: 1220px;
+
+  @media (min-width: $tablet-width) {
+    width: 80%;
+    min-width: 708px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 1220px;
+  }
+}
+
+.catalog__title-wrapper {
+  padding-top: 27px;
+  padding-bottom: 40px;
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #ebebeb;
+  margin-top: -1px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 31px;
+    margin-top: 0;
+    border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 18px;
+  }
+}
+
 .catalog__title {
   font-family: $font-oswald;
   font-weight: normal;
   font-size: 36px;
   line-height: 36px;
   color: $basic-black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+.catalog__item-wrapper {
+  border-bottom: 1px solid #ebebeb;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
+}
+
+.catalog__subtitle-wrapper {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.catalog__subtitle-wrapper::before {
+  position: absolute;
+  content: "";
+  width: 70%;
+  height: 2px;
+  right: 0;
+  top: 17px;
+  background-color: $basic-green;
+  z-index: -1;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    top: 22px;
+  }
 }
 
 .catalog__subtitle {
@@ -12,12 +79,32 @@
   font-size: 24px;
   line-height: 24px;
   color: $basic-black;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  width: max-content;
+  padding-right: 20px;
+  background-color: $basic-white;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    padding: 0 37px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    left: -37px;
+  }
 }
 
-.catalog__subtitle--extra {
-  grid-column: 1 / -1;
+.catalog__products {
+  margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 64px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 76px;
+  }
 }
 
 .catalog__products-list {
@@ -28,12 +115,14 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 60px;
+    column-gap: 60px;
+    row-gap: 17px;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(4, 1fr);
     column-gap: 80px;
+    row-gap: 18px;
   }
 }
 
@@ -41,19 +130,77 @@
   margin-bottom: 35px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 76px;
+    margin-bottom: 36px;
   }
 
   @media (min-width: $desktop-width) {
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    column-gap: 80px;
     margin-bottom: 86px;
+  }
+}
+
+.catalog__extra-wrapper {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 244px;
+    column-gap: 80px;
   }
 }
 
 .catalog__extra-list {
   list-style: none;
   margin: 0;
+  margin-top: 35px;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 69px;
+  }
+}
+
+.catalog__extra-promo {
+  padding-top: 39px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 69px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 70px;
+  }
+}
+
+.catalog__extra-promo-text {
+  margin: 0;
+  padding-top: 188px;
+  padding-bottom: 41px;
+  text-align: center;
+  font-family: "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: $basic-white;
+  background: url("../img/icon_gift.svg") no-repeat center 58px,
+    url("../img/gift-photo-mobile.png") no-repeat center / cover;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 72px;
+    padding-bottom: 68px;
+    padding-left: 423px;
+    text-align: left;
+    background: url("../img/icon_gift.svg") no-repeat 80px center,
+      url("../img/gift-photo-tablet.png") no-repeat center / cover;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 186px;
+    padding-bottom: 42px;
+    padding-left: 0;
+    text-align: center;
+    background: url("../img/icon_gift.svg") no-repeat center 58px,
+      url("../img/gift-photo-desktop.png") no-repeat center / cover;
+  }
 }
