@@ -63,11 +63,13 @@
   }
 }
 
-.item-card__image {
-  align-self: end;
-  justify-self: center;
-  padding-bottom: 13px;
+.item-card__image-box {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
 
+.item-card__image {
   @media (min-width: $tablet-width) {
     position: absolute;
     top: -73px;
