@@ -1,10 +1,9 @@
 .social-list {
   margin: 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   list-style: none;
-  padding: 18px 72px 19px;
+  padding: 18px 72px 18px;
   border-bottom: 1px solid #d9d9d9;
 
   @media (min-width: $tablet-width) {
@@ -15,76 +14,65 @@
   }
 }
 
-.social-list__item a {
-  display: block;
-  width: 25px;
-  height: 25px;
-  background-repeat: no-repeat;
-  background-position: center;
-
-  @media (min-width: $tablet-width) {
-    width: 35px;
-    height: 35px;
-    background-size: cover;
-  }
+.social-list__item {
+  margin: auto;
 }
 
-.social-list__item--vkontakte a {
-  background-image: url("../img/icon_vkontakte.svg");
+.social-list__item a:active {
+  opacity: 0.3;
+}
+
+.social-list__icon--vkontakte {
+  top: 2px;
+  left: -10px;
 
   @media (min-width: $tablet-width) {
     width: 30px;
     height: 22px;
-    margin-bottom: 9px;
+    top: -3px;
+    left: -8px;
   }
 }
 
-.social-list__item--vkontakte a:hover {
-  background-image: url("../img/icon_vkontakte-hover.svg");
-}
-
-.social-list__item--vkontakte a:active {
-  opacity: 0.3;
-}
-
-.social-list__item--instagram a {
-  background-image: url("../img/icon_instagram.svg");
-  margin-left: 4px;
+.social-list__icon--instagram {
+  top: 3px;
+  left: 0;
 
   @media (min-width: $tablet-width) {
     width: 23px;
     height: 23px;
-    margin-left: -28px;
-    margin-bottom: 5px;
+    top: -2px;
+    left: -1px;
   }
 }
 
-.social-list__item--instagram a:hover {
-  background-image: url("../img/icon_instagram-hover.svg");
+.social-list__icon {
+  position: relative;
+  fill: #666666;
 }
 
-.social-list__item--instagram a:active {
-  opacity: 0.3;
+.social-list__icon:hover {
+  fill: #68b738;
 }
 
-.social-list__item--facebook a {
-  width: 27px;
-  margin-right: 3px;
-  background-image: url("../img/icon_facebook.svg");
+.social-list__icon--facebook {
+  fill: none;
+  stroke: #666666;
+  stroke-width: 1.1;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  top: 2px;
+  left: 7px;
 
   @media (min-width: $tablet-width) {
     width: 28px;
     height: 33px;
-    margin-right: 0;
-    margin-left: -39px;
-    margin-bottom: 5px;
+    top: -3px;
+    left: -2px;
   }
 }
 
-.social-list__item--facebook a:hover {
-  background-image: url("../img/icon_facebook-hover.svg");
-}
-
-.social-list__item--facebook a:active {
-  opacity: 0.3;
+.social-list__icon--facebook:hover {
+  fill: none;
+  stroke: #68b738;
 }

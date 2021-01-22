@@ -95,22 +95,23 @@
 }
 
 .promo__image-box {
+  overflow: hidden;
   display: flex;
   justify-content: center;
   position: absolute;
   left: 0;
-  bottom: 67px;
+  bottom: 61px;
   width: 100%;
   z-index: -1;
 
   @media (min-width: $tablet-width) {
-    left: -9px;
-    bottom: 0;
+    left: -51px;
+    bottom: -4px;
   }
 
   @media (min-width: $desktop-width) {
-    left: auto;
-    bottom: 56px;
+    left: -16px;
+    bottom: 50px;
   }
 }
 
