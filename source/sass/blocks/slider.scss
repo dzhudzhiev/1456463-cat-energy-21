@@ -10,6 +10,10 @@
     height: 517px;
     width: auto;
   }
+
+  @media (min-width: $desktop-width) {
+    height: 524px;
+  }
 }
 
 .slider--before .slider__item {
@@ -25,7 +29,7 @@
 
 .slider__toggles {
   position: relative;
-  margin: 22px auto 0;
+  margin: 18px auto 0;
   width: 220px;
   display: flex;
   justify-content: space-between;
@@ -36,7 +40,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 31px;
+    margin-top: 27px;
     margin-right: 0;
     margin-left: auto;
     width: 572px;

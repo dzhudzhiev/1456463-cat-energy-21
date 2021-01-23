@@ -9,6 +9,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    padding-top: 15px;
     display: flex;
     padding-bottom: 40px;
   }
@@ -37,7 +38,7 @@
 
 .live-example__info {
   @media (min-width: $tablet-width) {
-    margin-bottom: 63px;
+    margin-bottom: 60px;
   }
 
   @media (min-width: $desktop-width) {
@@ -60,7 +61,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 50px;
+    margin-top: 57px;
     margin-bottom: 147px;
   }
 }
@@ -68,7 +69,6 @@
 .live-example__text {
   margin-top: 0;
   margin-bottom: 24px;
-  padding-right: 5px;
   font-family: "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -98,7 +98,7 @@
   text-align: center;
   text-transform: uppercase;
   color: $basic-black;
-  margin-top: 18px;
+  margin-top: 19px;
 
   @media (min-width: $tablet-width) {
     margin-left: auto;
