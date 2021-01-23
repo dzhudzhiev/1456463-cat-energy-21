@@ -70,31 +70,22 @@
 }
 
 .item-card__image {
+  padding-bottom: 10px;
+
   @media (min-width: $tablet-width) {
     position: absolute;
     top: -73px;
     left: 50%;
     transform: translateX(-50%);
-    height: 212px;
     width: auto;
   }
 
   @media (min-width: $desktop-width) {
-    top: -78px;
-    height: 208px;
-  }
-}
-
-.item-card__image--small {
-  padding-bottom: 17px;
-
-  @media (min-width: $tablet-width) {
-    height: 189px;
-    top: -45px;
-  }
-
-  @media (min-width: $desktop-width) {
-    height: 182px;
+    height: 196px;
+    width: 172px;
+    margin-left: 3px;
+    margin-top: -6px;
+    padding-bottom: 0;
   }
 }
 
@@ -156,7 +147,7 @@
     background: url("../img/plus-tablet.svg") no-repeat center 10px;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     padding-bottom: 86px;
     padding-top: 121px;
   }
@@ -308,12 +299,8 @@
 .item-card__button--show-more {
   background-color: $basic-gray;
   color: $dark-gray;
-  height: 60px;
-
-  @media (min-width: $tablet-width) {
-    height: 40px;
-    line-height: 38px;
-  }
+  height: 40px;
+  line-height: 38px;
 }
 
 .item-card__button--show-more:hover {

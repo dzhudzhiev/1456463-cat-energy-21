@@ -99,7 +99,7 @@
   margin-bottom: 25px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 64px;
+    margin-bottom: 67px;
   }
 
   @media (min-width: $desktop-width) {
@@ -121,7 +121,7 @@
 
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(4, 1fr);
-    column-gap: 80px;
+    column-gap: 76px;
     row-gap: 18px;
   }
 }
@@ -130,7 +130,7 @@
   margin-bottom: 35px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 36px;
+    margin-bottom: 75px;
   }
 
   @media (min-width: $desktop-width) {
