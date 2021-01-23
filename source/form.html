@@ -13,7 +13,7 @@
       class="page-header page-header--nojs page-header--nav-closed wrapper"
     >
       <div class="page-header__inner">
-        <a class="page-header__logo">
+        <a class="page-header__logo" area-label="логотип">
           <picture>
             <source
               media="(min-width: 1400px)"
@@ -28,13 +28,13 @@
             />
           </picture>
         </a>
-        <a class="page-header__title site-title">
-          <img
-            src="./img/text-logo-mobile.svg"
-            width="101"
-            height="22"
-            alt="логотип компании"
-          />
+        <a
+          class="page-header__title site-title"
+          area-label="логотип cat energy"
+        >
+          <svg role="img" width="101" height="18" viewBox="0 0 101 18">
+            <use xlink:href="./img/sprite.svg#text-logo-mobile"></use>
+          </svg>
         </a>
         <button class="page-header__nav-toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
@@ -150,50 +150,14 @@
               placeholder="kuklachev@gmail.com"
               required
             />
+
             <svg
               class="input-box__icon input-box__icon--email"
               width="19"
               height="14"
               viewBox="0 0 19 14"
-              fill="none"
             >
-              <line
-                x1="1.18955"
-                y1="6"
-                x2="1.18955"
-                y2="14"
-                stroke="currentColor"
-                stroke-width="1.3"
-              />
-              <line
-                x1="18.1896"
-                y1="6"
-                x2="18.1896"
-                y2="14"
-                stroke="currentColor"
-                stroke-width="1.3"
-              />
-              <line
-                x1="0.539551"
-                y1="13.35"
-                x2="18.5396"
-                y2="13.35"
-                stroke="currentColor"
-                stroke-width="1.3"
-              />
-              <line
-                x1="0.539551"
-                y1="1.35"
-                x2="18.5396"
-                y2="1.35"
-                stroke="currentColor"
-                stroke-width="1.3"
-              />
-              <path
-                d="M17.8896 3.1821L9.53957 9.67654L1.18955 3.18209V1.65H4.03955L9.53957 1.65H14.5396H17.8896V3.1821Z"
-                stroke="currentColor"
-                stroke-width="1.3"
-              />
+              <use xlink:href="./img/sprite.svg#icon_email"></use>
             </svg>
           </label>
           <label class="input-box input-box--contacts">
@@ -212,28 +176,8 @@
               width="20"
               height="20"
               viewBox="0 0 20 20"
-              fill="none"
             >
-              <g clip-path="url(#clip0)">
-                <path
-                  d="M17.7561 9.4H9.61816V10.6H17.7561L15.7455 12.7L16.6072 13.6L19.5752 10.5C19.6684 10.3702 19.7188 10.2123 19.7188 10.05C19.7188 9.88772 19.6684 9.72982 19.5752 9.6L16.6072 6.5L15.7455 7.4L17.7561 9.4Z"
-                  fill="currentColor"
-                />
-                <path
-                  d="M8.37362 19.4V13.2C8.36256 13.0447 8.29849 12.8987 8.19306 12.7886C8.08763 12.6785 7.94786 12.6116 7.79917 12.6H3.5866C3.59153 12.9167 3.71415 13.2189 3.92855 13.4428C4.14295 13.6668 4.43232 13.7949 4.73548 13.8H7.12899V18.8H3.5866C3.35992 18.8149 3.13268 18.7825 2.91809 18.7048C2.70349 18.6271 2.50582 18.5057 2.33656 18.3475C2.1673 18.1893 2.02983 17.9976 1.93215 17.7834C1.83446 17.5693 1.7785 17.337 1.76753 17.1V3.10001C1.75968 2.6373 1.92564 2.18977 2.22987 1.85331C2.5341 1.51686 2.95238 1.31824 3.39512 1.30001H7.12899V6.30001H4.83122C4.52806 6.30516 4.23869 6.43324 4.02429 6.65718C3.80989 6.88112 3.68727 7.18336 3.68234 7.50001H7.89491C8.0436 7.48846 8.18337 7.42154 8.2888 7.31142C8.39423 7.2013 8.4583 7.05531 8.46936 6.90001V0.600012C8.42369 0.443872 8.33642 0.304534 8.21775 0.198285C8.09907 0.0920352 7.95389 0.0232649 7.79917 1.23734e-05H3.5866C3.20936 -0.0133408 2.8333 0.0511002 2.47993 0.189651C2.12655 0.328202 1.80279 0.538145 1.52714 0.807477C1.2515 1.07681 1.02939 1.40025 0.8735 1.7593C0.717613 2.11835 0.631012 2.50598 0.618647 2.90001V16.8C0.590902 17.1977 0.642233 17.597 0.769411 17.9729C0.89659 18.3489 1.09686 18.6932 1.35764 18.9844C1.61841 19.2756 1.93405 19.5072 2.28469 19.6648C2.63534 19.8224 3.0134 19.9024 3.39512 19.9H7.79917C7.86953 19.915 7.94222 19.9133 8.01186 19.895C8.0815 19.8767 8.1463 19.8423 8.20147 19.7942C8.25664 19.7462 8.30075 19.6859 8.33055 19.6176C8.36035 19.5494 8.37507 19.475 8.37362 19.4Z"
-                  fill="currentColor"
-                />
-              </g>
-              <defs>
-                <clipPath id="clip0">
-                  <rect
-                    width="19.1481"
-                    height="20"
-                    fill="white"
-                    transform="translate(0.618652)"
-                  />
-                </clipPath>
-              </defs>
+              <use xlink:href="./img/sprite.svg#icon_phone"></use>
             </svg>
           </label>
         </div>
@@ -314,28 +258,49 @@
         <div class="contacts__map"></div>
       </div>
       <div class="page-footer__bottom wrapper">
-        <div class="page-footer__logo">
-          <img
-            src="./img/footer-logo.svg"
-            alt="логотип компании"
-            width="128"
-            height="24"
-          />
-        </div>
+        <a class="page-footer__logo" area-label="логотип cat energy">
+          <svg class="page-footer__img" role="img" width="128" height="24">
+            <use xlink:href="./img/sprite.svg#footer-logo"></use>
+          </svg>
+        </a>
         <ul class="page-footer__social social-list">
-          <li class="social-list__item social-list__item--vkontakte">
+          <li class="social-list__item" area-label="Мы в Вконтакте">
             <a href="https://vk.com/htmlacademy">
-              <span class="visually-hidden">Мы в Вконтакте</span>
+              <svg
+                class="social-list__icon social-list__icon--vkontakte"
+                width="23"
+                height="16"
+                viewBox="0 0 23 16"
+                role="img"
+              >
+                <use xlink:href="./img/sprite.svg#icon_vkontakte"></use>
+              </svg>
             </a>
           </li>
-          <li class="social-list__item social-list__item--instagram">
+          <li class="social-list__item" area-label="Мы в Инстаграме">
             <a href="https://www.instagram.com/htmlacademy">
-              <span class="visually-hidden">Мы в Инстаграме</span>
+              <svg
+                class="social-list__icon social-list__icon--instagram"
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                role="img"
+              >
+                <use xlink:href="./img/sprite.svg#icon_instagram"></use>
+              </svg>
             </a>
           </li>
-          <li class="social-list__item social-list__item--facebook">
+          <li class="social-list__item" area-label="Мы в Фейсбуке">
             <a href="https://www.facebook.com/htmlacademy">
-              <span class="visually-hidden">Мы в Фейсбуке</span>
+              <svg
+                class="social-list__icon social-list__icon--facebook"
+                width="22"
+                height="22"
+                viewBox="0 0 28 33"
+                role="img"
+              >
+                <use xlink:href="./img/sprite.svg#icon_facebook"></use>
+              </svg>
             </a>
           </li>
         </ul>
@@ -349,17 +314,8 @@
             class="copyright__logo"
             href="https://htmlacademy.ru/intensive/adaptive"
           >
-            <svg
-              class="copyright__image"
-              width="27"
-              height="34"
-              viewBox="0 0 27 34"
-              fill="none"
-            >
-              <path
-                d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z"
-                fill="currentColor"
-              />
+            <svg class="copyright__image" width="27" height="34" role="img">
+              <use xlink:href="./img/sprite.svg#htmlacademy"></use>
             </svg>
           </a>
         </div>
