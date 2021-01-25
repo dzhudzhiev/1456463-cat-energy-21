@@ -6,6 +6,10 @@
     <link rel="stylesheet" href="./css/style.min.css" />
     <link rel="preload" href="./fonts/oswaldregular.woff2" as="font" />
     <link rel="preload" href="./fonts/oswaldmedium.woff2" as="font" />
+    <script
+      src="https://api-maps.yandex.ru/2.1/?apikey=078b0221-7d2e-4b63-a4be-572fec9b73a1&lang=ru"
+      type="text/javascript"
+    ></script>
     <title>HTML Academy: Кэт энерджи</title>
   </head>
   <body class="page__body">
@@ -125,7 +129,9 @@
                 </div>
               </div>
               <div class="item-card__action">
-                <button class="item-card__button button">заказать</button>
+                <a href="form.html" class="item-card__button button"
+                  >заказать</a
+                >
               </div>
             </div>
           </li>
@@ -190,7 +196,9 @@
                 </div>
               </div>
               <div class="item-card__action">
-                <button class="item-card__button button">заказать</button>
+                <a href="form.html" class="item-card__button button"
+                  >заказать</a
+                >
               </div>
             </div>
           </li>
@@ -255,7 +263,9 @@
                 </div>
               </div>
               <div class="item-card__action">
-                <button class="item-card__button button">заказать</button>
+                <a href="form.html" class="item-card__button button"
+                  >заказать</a
+                >
               </div>
             </div>
           </li>
@@ -320,7 +330,9 @@
                 </div>
               </div>
               <div class="item-card__action">
-                <button class="item-card__button button">заказать</button>
+                <a href="form.html" class="item-card__button button"
+                  >заказать</a
+                >
               </div>
             </div>
           </li>
@@ -385,7 +397,9 @@
                 </div>
               </div>
               <div class="item-card__action">
-                <button class="item-card__button button">заказать</button>
+                <a href="form.html" class="item-card__button button"
+                  >заказать</a
+                >
               </div>
             </div>
           </li>
@@ -450,7 +464,9 @@
                 </div>
               </div>
               <div class="item-card__action">
-                <button class="item-card__button button">заказать</button>
+                <a href="form.html" class="item-card__button button"
+                  >заказать</a
+                >
               </div>
             </div>
           </li>
@@ -515,7 +531,9 @@
                 </div>
               </div>
               <div class="item-card__action">
-                <button class="item-card__button button">заказать</button>
+                <a href="form.html" class="item-card__button button"
+                  >заказать</a
+                >
               </div>
             </div>
           </li>
@@ -532,11 +550,12 @@
                 </div>
               </div>
               <div class="item-card__action">
-                <button
+                <a
+                  href="new-items.html"
                   class="item-card__button button item-card__button--show-more"
                 >
                   показать все
-                </button>
+                </a>
               </div>
             </div>
           </li>
@@ -563,9 +582,12 @@
                   <dd class="item-card__desc item-card__desc--extra">200 Р.</dd>
                 </dl>
               </div>
-              <button class="item-card__button item-card__button--extra button">
+              <a
+                href="form.html"
+                class="item-card__button item-card__button--extra button"
+              >
                 заказать
-              </button>
+              </a>
             </li>
             <li class="catalog__item item-card item-card--extra">
               <div class="item-card__content item-card__content--extra">
@@ -577,9 +599,12 @@
                   <dd class="item-card__desc item-card__desc--extra">50 Р.</dd>
                 </dl>
               </div>
-              <button class="item-card__button item-card__button--extra button">
+              <a
+                href="form.html"
+                class="item-card__button item-card__button--extra button"
+              >
                 заказать
-              </button>
+              </a>
             </li>
             <li class="catalog__item item-card item-card--extra">
               <div class="item-card__content item-card__content--extra">
@@ -589,9 +614,12 @@
                   <dd class="item-card__desc item-card__desc--extra">100 Р.</dd>
                 </dl>
               </div>
-              <button class="item-card__button item-card__button--extra button">
+              <a
+                href="form.html"
+                class="item-card__button item-card__button--extra button"
+              >
                 заказать
-              </button>
+              </a>
             </li>
             <li class="catalog__item item-card item-card--extra">
               <div class="item-card__content item-card__content--extra">
@@ -601,9 +629,12 @@
                   <dd class="item-card__desc item-card__desc--extra">300 Р.</dd>
                 </dl>
               </div>
-              <button class="item-card__button item-card__button--extra button">
+              <a
+                href="form.html"
+                class="item-card__button item-card__button--extra button"
+              >
                 заказать
-              </button>
+              </a>
             </li>
           </ul>
           <div class="catalog__extra-promo">
@@ -635,7 +666,7 @@
             </div>
           </div>
         </div>
-        <div class="contacts__map"></div>
+        <div class="contacts__map" id="map"></div>
       </div>
       <div class="page-footer__bottom wrapper">
         <a
