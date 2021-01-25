@@ -20,7 +20,7 @@ const html = () => {
   return gulp
     .src("source/*.html")
     .pipe(htmlmin({ collapseWhitespace: true }))
-    .pipe(gulp.dest("dist"));
+    .pipe(gulp.dest("build"));
 };
 
 exports.html = html;
@@ -31,7 +31,7 @@ const scripts = () => {
   return gulp
     .src("source/js/script.js")
     .pipe(rename("script.min.js"))
-    .pipe(gulp.dest("dist/js"))
+    .pipe(gulp.dest("build/js"))
     .pipe(sync.stream());
 };
 
@@ -49,7 +49,7 @@ const images = () => {
         imagemin.svgo(),
       ])
     )
-    .pipe(gulp.dest("dist/img"));
+    .pipe(gulp.dest("build/img"));
 };
 
 exports.images = images;
@@ -65,7 +65,7 @@ const styles = () => {
     .pipe(postcss([autoprefixer(), csso()]))
     .pipe(sourcemap.write("."))
     .pipe(rename("style.min.css"))
-    .pipe(gulp.dest("dist/css"))
+    .pipe(gulp.dest("build/css"))
     .pipe(sync.stream());
 };
 
@@ -77,7 +77,7 @@ const createWebp = () => {
   return gulp
     .src("source/img/**/*.{jpg,png}")
     .pipe(webp({ quality: 90 }))
-    .pipe(gulp.dest("dist/img"));
+    .pipe(gulp.dest("build/img"));
 };
 
 exports.createWebp = createWebp;
@@ -87,7 +87,7 @@ const sprite = () => {
     .src("source/img/icons/*.svg")
     .pipe(svgstore())
     .pipe(rename("sprite.svg"))
-    .pipe(gulp.dest("dist/img"));
+    .pipe(gulp.dest("build/img"));
 };
 
 exports.sprite = sprite;
@@ -106,7 +106,7 @@ const copy = () => {
         base: "source",
       }
     )
-    .pipe(gulp.dest("dist"));
+    .pipe(gulp.dest("build"));
 };
 
 exports.copy = copy;
@@ -114,7 +114,7 @@ exports.copy = copy;
 // Clean
 
 const clean = () => {
-  return del("dist");
+  return del("build");
 };
 
 exports.clean = clean;
@@ -124,7 +124,7 @@ exports.clean = clean;
 const server = (done) => {
   sync.init({
     server: {
-      baseDir: "dist",
+      baseDir: "build",
     },
     cors: true,
     notify: false,
