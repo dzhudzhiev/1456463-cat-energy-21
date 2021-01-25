@@ -30,7 +30,6 @@ exports.html = html;
 const scripts = () => {
   return gulp
     .src("source/js/script.js")
-    .pipe(rename("script.min.js"))
     .pipe(gulp.dest("build/js"))
     .pipe(sync.stream());
 };
@@ -146,13 +145,13 @@ const watcher = () => {
 
 const build = gulp.series(
   clean,
-  gulp.parallel(styles, html, images, sprite, copy, createWebp)
+  gulp.parallel(styles, html, images, copy, sprite, scripts, createWebp)
 );
 
 exports.build = build;
 
 exports.default = gulp.series(
   clean,
-  gulp.parallel(styles, html, copy, sprite, createWebp),
+  gulp.parallel(styles, html, copy, sprite, scripts, createWebp),
   gulp.series(server, watcher)
 );
