@@ -69,6 +69,10 @@
   align-items: flex-end;
 }
 
+.item-card__image:active {
+  outline: 2px solid black;
+}
+
 .item-card__image {
   padding-bottom: 10px;
 

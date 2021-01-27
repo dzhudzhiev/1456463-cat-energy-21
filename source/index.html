@@ -266,9 +266,14 @@
               >
                 было
               </button>
-              <div class="slider__progress">
-                <div class="slider__thumb"></div>
-              </div>
+              <label class="visually-hidden" for="slider-progress"
+                >Слайдер</label
+              >
+              <input
+                class="slider__progress"
+                id="slider-progress"
+                type="range"
+              />
               <button
                 class="slider__toggle slider__toggle--after"
                 type="button"
@@ -348,21 +353,15 @@
             </a>
           </li>
         </ul>
-        <div class="page-footer__copyright copyright">
-          <a
-            class="copyright__link"
-            href="https://htmlacademy.ru/intensive/adaptive"
-            >HTML Academy</a
-          >
-          <a
-            class="copyright__logo"
-            href="https://htmlacademy.ru/intensive/adaptive"
-          >
-            <svg class="copyright__image" width="27" height="34" role="img">
-              <use xlink:href="./img/sprite.svg#htmlacademy"></use>
-            </svg>
-          </a>
-        </div>
+        <a
+          class="page-footer__copyright copyright"
+          href="https://htmlacademy.ru/intensive/adaptive"
+        >
+          <span class="copyright__link"> HTML Academy </span>
+          <svg class="copyright__image" width="27" height="34" role="img">
+            <use xlink:href="./img/sprite.svg#htmlacademy"></use>
+          </svg>
+        </a>
       </div>
     </footer>
 

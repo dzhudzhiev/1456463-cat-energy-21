@@ -166,8 +166,9 @@
     display: none;
   }
 
+  appearance: none;
   position: relative;
-  top: 13px;
+  top: 11px;
   left: 2px;
   width: 428px;
   height: 6px;
@@ -175,38 +176,60 @@
   border-radius: 6px;
 }
 
-.slider__thumb {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 34px;
-  height: 34px;
-  background: #ffffff;
-  border: 1px solid #cdcdcd;
-  border-radius: 50%;
-  filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.16));
+.slider__progress::-webkit-slider-runnable-track {
+  width: 428px;
+  height: 6px;
   cursor: pointer;
+  background: #dcdcdc;
+  border-radius: 6px;
 }
 
-.slider__thumb::after {
-  position: relative;
-  content: "";
-  display: block;
-  background-color: #68b738;
-  width: 8px;
-  height: 8px;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+.slider__progress::-webkit-slider-thumb {
+  appearance: none;
+  box-shadow: 0 0 0 1px #cdcdcd;
+  border: 12px solid white;
+  height: 32px;
+  width: 32px;
   border-radius: 50%;
+  background-color: #68b738;
+  cursor: pointer;
+  margin-top: -13px;
 }
 
-.slider__thumb:hover {
+.slider__progress::-webkit-slider-thumb:hover {
   filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.19));
 }
 
-.slider__thumb:active {
+.slider__progress::-webkit-slider-thumb:active {
   filter: drop-shadow(0 3px 5px rgba(0, 0, 0, 0.2));
-  border: 1px solid #68b738;
+  box-shadow: 0 0 0 1px #68b738;
+}
+
+.slider__progress::-moz-range-track {
+  width: 428px;
+  height: 6px;
+  cursor: pointer;
+  background: #dcdcdc;
+  border-radius: 6px;
+}
+
+.slider__progress::-moz-range-thumb {
+  box-shadow: 0 0 0 1px #cdcdcd;
+  border: 12px solid white;
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  background-color: #68b738;
+  cursor: pointer;
+  appearance: none;
+  margin-top: -16px;
+}
+
+.slider__progress::-moz-range-thumb:hover {
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.19));
+}
+
+.slider__progress::-moz-range-thumb:active {
+  filter: drop-shadow(0 3px 5px rgba(0, 0, 0, 0.2));
+  box-shadow: 0 0 0 1px #68b738;
 }
