@@ -6,10 +6,7 @@
     <link rel="stylesheet" href="./css/style.min.css" />
     <link rel="preload" href="./fonts/oswaldregular.woff2" as="font" />
     <link rel="preload" href="./fonts/oswaldmedium.woff2" as="font" />
-    <script
-      src="https://api-maps.yandex.ru/2.1/?apikey=078b0221-7d2e-4b63-a4be-572fec9b73a1&lang=ru"
-      type="text/javascript"
-    ></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=078b0221-7d2e-4b63-a4be-572fec9b73a1&lang=ru"></script>
     <title>HTML Academy: Кэт энерджи</title>
   </head>
   <body class="page__body">
@@ -17,7 +14,7 @@
       class="page-header page-header--nojs page-header--nav-closed wrapper"
     >
       <div class="page-header__inner">
-        <a class="page-header__logo" href="index.html" area-label="логотип">
+        <a class="page-header__logo" href="index.html">
           <picture>
             <source
               media="(min-width: 1400px)"
@@ -32,11 +29,7 @@
             />
           </picture>
         </a>
-        <a
-          class="page-header__title site-title"
-          href="index.html"
-          area-label="логотип cat energy"
-        >
+        <a class="page-header__title site-title" href="index.html">
           <svg role="img" width="101" height="18" viewBox="0 0 101 18">
             <use xlink:href="./img/sprite.svg#text-logo-mobile"></use>
           </svg>
@@ -66,12 +59,12 @@
           <h1 class="catalog__title">Каталог продукции</h1>
         </div>
       </div>
-      <section class="catalog__products catalog__wrapper">
+      <div class="catalog__products catalog__wrapper">
         <ul class="catalog__products-list">
           <li class="catalog__item-wrapper" id="products-pro">
             <div class="item-card item-card__wrapper">
               <div class="item-card__content">
-                <div class="item-card__image-box">
+                <a class="item-card__image-box" href="item.html">
                   <picture>
                     <source
                       media="(min-width: 1400px)"
@@ -109,11 +102,14 @@
                       srcset="./img/catalog-1-mobile@2x.png 2x"
                       width="140"
                       height="112"
+                      alt="Изображение товара"
                     />
                   </picture>
-                </div>
+                </a>
                 <div class="item-card__info">
-                  <b class="item-card__title">Cat Energy PRO 500 г</b>
+                  <a class="item-card__title" href="item.html"
+                    >Cat Energy PRO 500 г</a
+                  >
                   <dl class="item-card__details">
                     <dt class="item-card__term">Масса</dt>
                     <dd class="item-card__desc">500 г</dd>
@@ -138,7 +134,7 @@
           <li class="catalog__item-wrapper">
             <div class="item-card item-card__wrapper">
               <div class="item-card__content">
-                <div class="item-card__image-box">
+                <a class="item-card__image-box" href="item.html">
                   <picture>
                     <source
                       media="(min-width: 1400px)"
@@ -176,11 +172,14 @@
                       srcset="./img/catalog-2-mobile@2x.png 2x"
                       width="140"
                       height="112"
+                      alt="Изображение товара"
                     />
                   </picture>
-                </div>
+                </a>
                 <div class="item-card__info">
-                  <b class="item-card__title">Cat Energy PRO 1000 г</b>
+                  <a class="item-card__title" href="item.html"
+                    >Cat Energy PRO 1000 г</a
+                  >
                   <dl class="item-card__details">
                     <dt class="item-card__term">Масса</dt>
                     <dd class="item-card__desc">1000 г</dd>
@@ -205,7 +204,7 @@
           <li class="catalog__item-wrapper">
             <div class="item-card item-card__wrapper">
               <div class="item-card__content">
-                <div class="item-card__image-box">
+                <a class="item-card__image-box" href="item.html">
                   <picture>
                     <source
                       media="(min-width: 1400px)"
@@ -243,11 +242,14 @@
                       srcset="./img/catalog-3-mobile@2x.png 2x"
                       width="140"
                       height="112"
+                      alt="Изображение товара"
                     />
                   </picture>
-                </div>
+                </a>
                 <div class="item-card__info">
-                  <b class="item-card__title">Cat Energy PRO 500 г</b>
+                  <a class="item-card__title" href="item.html"
+                    >Cat Energy PRO 500 г</a
+                  >
                   <dl class="item-card__details">
                     <dt class="item-card__term">Масса</dt>
                     <dd class="item-card__desc">500 г</dd>
@@ -272,7 +274,7 @@
           <li class="catalog__item-wrapper">
             <div class="item-card item-card__wrapper">
               <div class="item-card__content">
-                <div class="item-card__image-box">
+                <a class="item-card__image-box" href="item.html">
                   <picture>
                     <source
                       media="(min-width: 1400px)"
@@ -310,11 +312,14 @@
                       srcset="./img/catalog-4-mobile@2x.png 2x"
                       width="140"
                       height="112"
+                      alt="Изображение товара"
                     />
                   </picture>
-                </div>
+                </a>
                 <div class="item-card__info">
-                  <b class="item-card__title">Cat Energy PRO 1000 г</b>
+                  <a class="item-card__title" href="item.html"
+                    >Cat Energy PRO 1000 г</a
+                  >
                   <dl class="item-card__details">
                     <dt class="item-card__term">Масса</dt>
                     <dd class="item-card__desc">1000 г</dd>
@@ -339,7 +344,7 @@
           <li class="catalog__item-wrapper" id="products-slim">
             <div class="item-card item-card__wrapper">
               <div class="item-card__content">
-                <div class="item-card__image-box">
+                <a class="item-card__image-box" href="item.html">
                   <picture>
                     <source
                       media="(min-width: 1400px)"
@@ -377,11 +382,14 @@
                       srcset="./img/catalog-5-mobile@2x.png 2x"
                       width="140"
                       height="112"
+                      alt="Изображение товара"
                     />
                   </picture>
-                </div>
+                </a>
                 <div class="item-card__info">
-                  <b class="item-card__title">Cat Energy slim 500 г</b>
+                  <a class="item-card__title" href="item.html"
+                    >Cat Energy slim 500 г</a
+                  >
                   <dl class="item-card__details">
                     <dt class="item-card__term">Масса</dt>
                     <dd class="item-card__desc">500 г</dd>
@@ -406,7 +414,7 @@
           <li class="catalog__item-wrapper">
             <div class="item-card item-card__wrapper">
               <div class="item-card__content">
-                <div class="item-card__image-box">
+                <a class="item-card__image-box" href="item.html">
                   <picture>
                     <source
                       media="(min-width: 1400px)"
@@ -444,11 +452,14 @@
                       srcset="./img/catalog-6-mobile@2x.png 2x"
                       width="140"
                       height="112"
+                      alt="Изображение товара"
                     />
                   </picture>
-                </div>
+                </a>
                 <div class="item-card__info">
-                  <b class="item-card__title">Cat Energy slim 1000 г</b>
+                  <a class="item-card__title" href="item.html"
+                    >Cat Energy slim 1000 г</a
+                  >
                   <dl class="item-card__details">
                     <dt class="item-card__term">Масса</dt>
                     <dd class="item-card__desc">1000 г</dd>
@@ -473,7 +484,7 @@
           <li class="catalog__item-wrapper">
             <div class="item-card item-card__wrapper">
               <div class="item-card__content">
-                <div class="item-card__image-box">
+                <a class="item-card__image-box" href="item.html">
                   <picture>
                     <source
                       media="(min-width: 1400px)"
@@ -511,11 +522,14 @@
                       srcset="./img/catalog-7-mobile@2x.png 2x"
                       width="140"
                       height="112"
+                      alt="Изображение товара"
                     />
                   </picture>
-                </div>
+                </a>
                 <div class="item-card__info">
-                  <b class="item-card__title">Cat Energy slim 500 г</b>
+                  <a class="item-card__title" href="item.html"
+                    >Cat Energy slim 500 г</a
+                  >
                   <dl class="item-card__details">
                     <dt class="item-card__term">Масса</dt>
                     <dd class="item-card__desc">500 г</dd>
@@ -560,9 +574,9 @@
             </div>
           </li>
         </ul>
-      </section>
+      </div>
 
-      <section class="catalog__extra">
+      <div class="catalog__extra">
         <div class="catalog__subtitle-wrapper">
           <div class="wrapper">
             <h2 class="catalog__subtitle catalog__subtitle--extra">
@@ -645,7 +659,7 @@
             </p>
           </div>
         </div>
-      </section>
+      </div>
     </main>
 
     <footer class="page-footer">
@@ -669,17 +683,13 @@
         <div class="contacts__map" id="map"></div>
       </div>
       <div class="page-footer__bottom wrapper">
-        <a
-          class="page-footer__logo"
-          href="index.html"
-          area-label="логотип cat energy"
-        >
+        <a class="page-footer__logo" href="index.html">
           <svg class="page-footer__img" role="img" width="128" height="24">
             <use xlink:href="./img/sprite.svg#footer-logo"></use>
           </svg>
         </a>
         <ul class="page-footer__social social-list">
-          <li class="social-list__item" area-label="Мы в Вконтакте">
+          <li class="social-list__item">
             <a href="https://vk.com/htmlacademy">
               <svg
                 class="social-list__icon social-list__icon--vkontakte"
@@ -692,7 +702,7 @@
               </svg>
             </a>
           </li>
-          <li class="social-list__item" area-label="Мы в Инстаграме">
+          <li class="social-list__item">
             <a href="https://www.instagram.com/htmlacademy">
               <svg
                 class="social-list__icon social-list__icon--instagram"
@@ -705,7 +715,7 @@
               </svg>
             </a>
           </li>
-          <li class="social-list__item" area-label="Мы в Фейсбуке">
+          <li class="social-list__item">
             <a href="https://www.facebook.com/htmlacademy">
               <svg
                 class="social-list__icon social-list__icon--facebook"

@@ -17,6 +17,10 @@
   }
 }
 
+.input-box--comment {
+  display: block;
+}
+
 .input-box__label,
 .input-box__input {
   @include form-text();

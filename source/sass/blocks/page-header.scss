@@ -83,6 +83,10 @@
   display: block;
 }
 
+.page-header--nojs .page-header__nav-toggle {
+  visibility: hidden;
+}
+
 .page-header__nav-toggle {
   position: relative;
   display: block;

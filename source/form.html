@@ -6,10 +6,7 @@
     <link rel="stylesheet" href="./css/style.min.css" />
     <link rel="preload" href="./fonts/oswaldregular.woff2" as="font" />
     <link rel="preload" href="./fonts/oswaldmedium.woff2" as="font" />
-    <script
-      src="https://api-maps.yandex.ru/2.1/?apikey=078b0221-7d2e-4b63-a4be-572fec9b73a1&lang=ru"
-      type="text/javascript"
-    ></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=078b0221-7d2e-4b63-a4be-572fec9b73a1&lang=ru"></script>
     <title>HTML Academy: Кэт энерджи</title>
   </head>
   <body class="page__body">
@@ -17,7 +14,7 @@
       class="page-header page-header--nojs page-header--nav-closed wrapper"
     >
       <div class="page-header__inner">
-        <a class="page-header__logo" href="index.html" area-label="логотип">
+        <a class="page-header__logo" href="index.html">
           <picture>
             <source
               media="(min-width: 1400px)"
@@ -32,11 +29,7 @@
             />
           </picture>
         </a>
-        <a
-          class="page-header__title site-title"
-          href="index.html"
-          area-label="логотип cat energy"
-        >
+        <a class="page-header__title site-title" href="index.html">
           <svg role="img" width="101" height="18" viewBox="0 0 101 18">
             <use xlink:href="./img/sprite.svg#text-logo-mobile"></use>
           </svg>
@@ -60,11 +53,11 @@
       </nav>
     </header>
 
-    <main class="page-main">
+    <main class="page-main main-form">
       <h1 class="main-form__title main-form__wrapper wrapper">
         Подбор программы
       </h1>
-      <form action="https://echo.htmlacademy.ru/courses" class="main-form">
+      <form action="https://echo.htmlacademy.ru/courses">
         <header class="main-form__header main-form__wrapper wrapper">
           <h2 class="main-form__subject">
             Заполните анкету, и мы подберем<br />
@@ -193,7 +186,9 @@
           </div>
         </div>
 
-        <div class="main-form__comment main-form__wrapper wrapper">
+        <div
+          class="main-form__comment main-form__wrapper wrapper input-box input-box--comment"
+        >
           <textarea
             class="input-box__input input-box__input--comment"
             name="comment"
@@ -263,17 +258,13 @@
         <div class="contacts__map" id="map"></div>
       </div>
       <div class="page-footer__bottom wrapper">
-        <a
-          class="page-footer__logo"
-          href="index.html"
-          area-label="логотип cat energy"
-        >
+        <a class="page-footer__logo" href="index.html">
           <svg class="page-footer__img" role="img" width="128" height="24">
             <use xlink:href="./img/sprite.svg#footer-logo"></use>
           </svg>
         </a>
         <ul class="page-footer__social social-list">
-          <li class="social-list__item" area-label="Мы в Вконтакте">
+          <li class="social-list__item">
             <a href="https://vk.com/htmlacademy">
               <svg
                 class="social-list__icon social-list__icon--vkontakte"
@@ -286,7 +277,7 @@
               </svg>
             </a>
           </li>
-          <li class="social-list__item" area-label="Мы в Инстаграме">
+          <li class="social-list__item">
             <a href="https://www.instagram.com/htmlacademy">
               <svg
                 class="social-list__icon social-list__icon--instagram"
@@ -299,7 +290,7 @@
               </svg>
             </a>
           </li>
-          <li class="social-list__item" area-label="Мы в Фейсбуке">
+          <li class="social-list__item">
             <a href="https://www.facebook.com/htmlacademy">
               <svg
                 class="social-list__icon social-list__icon--facebook"

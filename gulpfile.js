@@ -62,6 +62,7 @@ const styles = () => {
     .pipe(sourcemap.init())
     .pipe(sass())
     .pipe(postcss([autoprefixer(), csso()]))
+    .pipe(gulp.dest("build/css"))
     .pipe(sourcemap.write("."))
     .pipe(rename("style.min.css"))
     .pipe(gulp.dest("build/css"))

@@ -29,6 +29,7 @@
 
     @media (min-width: $desktop-width) {
       display: block;
+      background-color: $basic-green;
       background-image: url("../img/cat-background-desktop.jpg");
       top: auto;
       bottom: 0;
